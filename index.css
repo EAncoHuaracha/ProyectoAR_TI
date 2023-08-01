@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@400;600;800&display=swap');
+
+
+#webar-powered-img {
+    display: none;
+}
+
+#injection-root {
+    z-index: 1 !important;
+}
+
+#overlay,
+#ox-progress-bar {
+    background-color: #1b0dda !important;
+    color: #fff !important;
+}
+
+#ox-progress-loading-text,
+#ox-progress-percentage-text {
+    color: #fff !important;
+}
+
+.ox-game-top {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: calc(100vw - 40px);
+    background-color: #1b0dda;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.ox-game-top>* {
+    width: 33%;
+}
+
+.ox-game-top__points {
+    text-align: right;
+}
+
+.ox-game-top__catched {
+    text-align: center;
+}
+
+.ox-icon {
+    display: flex;
+    align-items: center;
+}
+
+svg g {
+    stroke: #1b0dda;
+}
+
+.ox-icon img {
+    height: 30px;
+}
+
+.ox-game-msg {
+    position: fixed;
+    top: 80px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.12);
+    background-color: #FFF;
+    color: #1b0dda;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ox-game-clock {
+    position: fixed;
+    bottom: 30px;
+    margin-left: 50%;
+    padding: 0px 20px;
+    transform: translateX(-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    background-color: #FFF;
+    color: #1b0dda;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 24px;
+}
+
+.ox-game-clock--running {
+    color: #ce1259;
+}
+
+.ox-game-clock--running svg g {
+    stroke: #ce1259;
+}
+
+.ox-game-clock--ending {
+    color: #FFF;
+    background-color: #ce1259;
+}
+
+.ox-game-clock--ending svg g {
+    stroke: #FFF;
+}
+
+
+.ox-game-clock span {
+    margin-left: 18px;
+}
+
+.ox-end {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #31004c;
+    color: #FFF;
+    padding: 20px;
+}
+
+.ox-end h1 {
+    font-size: 42px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.ox-end .ox-card {
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.43px;
+    color: #1b0dda;
+
+}
+
+.ox-end .ox-card h1 {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    color: black;
+}
+
+#colors {
+    display: flex;
+    border-radius: 10px;
+    background-color: #f2f1f3;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#score {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #211f1f;
+    justify-content: space-between;
+}
+
+#card-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: #211f1f;
+}
+
+#colors>figure {
+    margin: 0;
+    position: relative;
+}
+
+#colors>figure>figcaption {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b6b1b9;
+}
+
+#ox-end__game-points {
+    width: 280px;
+    text-align: right;
+}
+
+#share_text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.succes-tick {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    right: -4px;
+    top: -3px;
+}
+
+.fail-tick {
+    position: absolute;
+    z-index: 2;
+    right: -4px;
+    top: -3px;
+}
+
+.ox-end .ox-card:last-child {
+    margin-bottom: 0px;
+}
+
+.ox-end a.ox-button {
+    border: none;
+    width: 100%;
+    max-width: 360px;
+    height: 50px;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #580088;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ox-end .ox-card2 h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+.ox-end .ox-card2 p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.ox-end a.ox-button.ox-border-button {
+    border: 2px;
+    background-color: #EE0979;
+    color: #fff;
+}
+
+.ox-end .ox-card a.ox-button--primary {
+    border: 2px solid;
+}
+
+
+#ox-end-logo2 {
+    display: none;
+}
+
+
+#ox-onboarding {
+    height: 100vh;
+    width: 100.1%;
+    position: fixed;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    opacity: .98;
+    background: #31004C;
+}
+
+.ox-onboarding-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 50px);
+    width: calc(100% - 50px);
+    max-width: 380px;
+    max-height: 450px;
+    box-sizing: border-box;
+}
+
+.ox-onboarding-step {
+    margin-top: 10px !important;
+    display: block !important;
+    color: #c4c4c4 !important;
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+}
+
+.ox-onboarding-card p {
+    color: #580088 !important;
+    font-size: 24px !important;
+    line-height: 35px !important;
+    font-family: 'Open Sans' !important;
+    font-weight: 800 !important;
+    margin-top: 20px !important;
+}
+
+.ox-onboarding-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ox-onboarding-card a.ox-onboarding-button-skip {
+    font-weight: 400;
+}
+
+.ox-onboarding-card-3 .ox-onboarding-button-skip {
+    opacity: .6;
+    color: #c4c4c4 !important;
+}
+
+.ox-onboarding-button-next,
+.ox-onboarding-button-skip {
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+    font-family: 'Open Sans' !important;
+    text-decoration: none !important;
+    font-size: 17px !important;
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    color: #0155D2 !important;
+}
+
+
+.ox-onboarding-card-1,
+.ox-onboarding-card-3,
+.ox-onboarding-card-2 {
+    display: none;
+}
+
+
+
+#ox-audio {
+    width: 300px;
+    height: 58px;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px 0 rgb(33 31 31 / 24%);
+    background-color: #fff;
+    bottom: 0;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+
+#ox-audio__container {
+    display: grid;
+    grid-template-columns: 0.01fr 1fr 0.15fr;
+    -webkit-animation: fade 0.3s linear;
+    -moz-animation: fade 0.3s linear;
+    -ms-animation: fade 0.3s linear;
+    -o-animation: fade 0.3s linear;
+    animation: fade 0.3s linear;
+}
+
+#ox-audio__title-bold {
+    font-weight: bold;
+    margin: 0;
+}
+
+#ox-audio__title {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+#ox-audio__subtitle {
+    font-size: 12px;
+}
+
+#ox-audio__icon {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    margin-right: -10px;
+}
+
+#ox-audio__close {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#ox-audio__icon svg g,
+#ox-audio__close svg g {
+    stroke: none !important;
+}
+
+/*Animation*/
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Firefox < 16 */
+@-moz-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

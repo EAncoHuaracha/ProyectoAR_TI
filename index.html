@@ -1,0 +1,185 @@
+<div id="ox-onboarding">
+    <div id='card1' class="ox-onboarding-card ox-onboarding-card-1">
+        <div class="ox-onboarding-content">
+            <span class="ox-onboarding-step">Paso 1/3</span>
+            <p>¡Intenta atrapar los logos por colores, en parejas, para sumar todos los puntos que puedas!</p>
+        </div>
+        <div class="ox-onboarding-controls">
+            <button class="ox-onboarding-button-skip">Saltar</button>
+            <button id="button_card1" class="ox-onboarding-button-next">Siguiente</button>
+        </div>
+    </div>
+    <div id='card2' class="ox-onboarding-card ox-onboarding-card-2" name="card2">
+        <div class="ox-onboarding-content">
+            <span class="ox-onboarding-step">Paso 2/3</span>
+            <p>¡Tenga cuidado, si pierde un par, desaparecerá y no se anotarán puntos!</p>
+        </div>
+        <div class="ox-onboarding-controls">
+            <button class="ox-onboarding-button-skip">Saltar</button>
+            <button id="button_card2" class="ox-onboarding-button-next">Siguiente</button>
+        </div>
+    </div>
+    <div id='card3' class="ox-onboarding-card ox-onboarding-card-3">
+        <div class="ox-onboarding-content">
+            <span class="ox-onboarding-step">Paso 3/3</span>
+            <p>¡Buena suerte!</p>
+        </div>
+        <div class="ox-onboarding-controls">
+            <button class="ox-onboarding-button-skip">Saltar</button>
+            <button id="button_card3" class="ox-onboarding-button-next">Jugar</button>
+        </div>
+    </div>
+</div>
+
+<div class="ox-game-top" id="ox-game-top">
+    <div id="ox-game-top__catched" class="ox-game-top__catched">0/5</div>
+    <div id="ox-game-score" class="ox-game-top__points">0 pts</div>
+</div>
+
+<div id="ox-game-msg" class="ox-game-msg">
+    Toque el boton start
+</div>
+
+<div id="ox-game-clock" class="ox-game-clock">
+    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#002750" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0"
+            fill="none" fill-rule="evenodd">
+            <path
+                d="M14 25.667c-5.635 0-10.208-4.574-10.208-10.209S8.365 5.25 14 5.25s10.208 4.573 10.208 10.208S19.635 25.667 14 25.667zM14 9.333v5.834M10.5 2.333h7" />
+        </g>
+    </svg>
+    <span id="ox-game-clock__seconds">30s</span>
+</div>
+
+<div id="ox-end" class="ox-end">
+    <img id="ox-end-logo" src="https://www.onirix.com/ox-experiences/onirix-hunt/ox-end-fig.svg">
+    <img id="ox-end-logo2" src="https://www.onirix.com/ox-experiences/onirix-hunt/ox-end-fig-bad.svg">
+    <div class="ox-card">
+        <h1 id="card-header">Bien jugado</h1>
+        <div id="colors">
+            <figure>
+                <img id="standar_color" src="https://www.onirix.com/ox-experiences/onirix-hunt/ox-primary.svg">
+                <img id="succes_standar" class="succes-tick"
+                    src="https://www.onirix.com/ox-experiences/onirix-hunt/success-tick.svg">
+                <img id="fail_standar" class="fail-tick"
+                    src="https://www.onirix.com/ox-experiences/onirix-hunt/fail.svg">
+                <figcaption id="text_standar">
+                    -25
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img id="purple_color" src="https://www.onirix.com/ox-experiences/onirix-hunt/ox-purple.svg">
+                <img id="succes_purple" class="succes-tick"
+                    src="https://www.onirix.com/ox-experiences/onirix-hunt/success-tick.svg">
+                <img id="fail_purple" class="fail-tick"
+                    src="https://www.onirix.com/ox-experiences/onirix-hunt/fail.svg">
+                <figcaption id="text_purple">
+                    -25
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img id="orange_color" src="https://www.onirix.com/ox-experiences/onirix-hunt/ox-orange.svg">
+                <img id="succes_orange" class="succes-tick"
+                    src="https://www.onirix.com/ox-experiences/onirix-hunt/success-tick.svg">
+                <img id="fail_orange" class="fail-tick"
+                    src="https://www.onirix.com/ox-experiences/onirix-hunt/fail.svg">
+                <figcaption id="text_orange">
+                    -25
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img id="blue_color" src="https://www.onirix.com/ox-experiences/onirix-hunt/ox-blue.svg">
+                <img id="succes_blue" class="succes-tick"
+                    src="https://www.onirix.com/ox-experiences/onirix-hunt/success-tick.svg">
+                <img id="fail_blue" class="fail-tick" src="https://www.onirix.com/ox-experiences/onirix-hunt/fail.svg">
+                <figcaption id="text_blue">
+                    -25
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img id="gold_color" src="https://www.onirix.com/ox-experiences/onirix-hunt/ox-gold.svg">
+                <img id="succes_gold" class="succes-tick"
+                    src="https://www.onirix.com/ox-experiences/onirix-hunt/success-tick.svg">
+                <img id="fail_gold" class="fail-tick" src="https://www.onirix.com/ox-experiences/onirix-hunt/fail.svg">
+                <figcaption id="text_gold">
+                    -25
+                </figcaption>
+            </figure>
+
+        </div>
+        <div id="score">
+            <p> Puntaje </p>
+            <p id="ox-end__game-points">50pts</p>
+        </div>
+
+        <a class="ox-button ox-button--primary" id="ox-button--go_home">
+            Volver a jugar
+        </a>
+    </div>
+    <div class="ox-card2">
+        <h1>Juega con otros!</h1>
+        <a id="share-button" class="ox-button ox-border-button ox-button-play-again">
+            Compartir
+        </a>
+    </div>
+
+</div>
+
+<div id="ox-audio">
+    <div id="ox-audio__container">
+        <div id="ox-audio__icon">
+            <svg width="58" height="56" viewBox="0 0 58 56" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter x="-9%" y="-46.6%" width="118%" height="193.1%" filterUnits="objectBoundingBox"
+                        id="srumujwtua">
+                        <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
+                        <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                        <feColorMatrix values="0 0 0 0 0.129411765 0 0 0 0 0.121568627 0 0 0 0 0.121568627 0 0 0 0.24 0"
+                            in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+                        <feMerge>
+                            <feMergeNode in="shadowMatrixOuter1" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <g filter="url(#srumujwtua)" transform="translate(6 -2)" fill="#211F1F" fill-rule="nonzero">
+                    <path
+                        d="m21.336 23.22-2.445 1.597a1.081 1.081 0 0 1-.554.162H17.14c-2.022 0-3.14 1.167-3.14 3.275v3.493c0 2.109 1.118 3.275 3.14 3.275h1.197c.189 0 .389.06.567.17l2.432 1.59c2.527 1.653 4.805.337 4.805-2.773v-8.016c0-3.116-2.275-4.428-4.805-2.774zm3.549 2.773v8.016c0 2.08-1.191 2.769-2.882 1.663l-2.445-1.598a2.321 2.321 0 0 0-1.22-.362H17.14c-1.328 0-1.884-.58-1.884-1.965v-3.493c0-1.385.556-1.965 1.884-1.965h1.197c.42 0 .84-.125 1.208-.353l2.458-1.607c1.694-1.107 2.882-.422 2.882 1.664zM27.648 25.984a.611.611 0 0 1 .879.13 6.694 6.694 0 0 1 0 7.773.611.611 0 0 1-.88.13.674.674 0 0 1-.124-.916 5.34 5.34 0 0 0 0-6.2.674.674 0 0 1 .125-.917z" />
+                    <path
+                        d="M29.18 23.8a.611.611 0 0 1 .88.131c2.587 3.595 2.587 8.544 0 12.14a.611.611 0 0 1-.88.13.674.674 0 0 1-.125-.917c2.252-3.13 2.252-7.437 0-10.566a.674.674 0 0 1 .125-.917z" />
+                </g>
+            </svg>
+        </div>
+        <div id="ox-audio__title">
+            <div class="row">
+                <p id="ox-audio__title-bold">El juego tiene sonido</p>
+                <span id="ox-audio__subtitle">Suba el volumen del dispositivo!</span>
+            </div>
+        </div>
+        <div id="ox-audio__close">
+            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter x="-9%" y="-46.6%" width="118%" height="193.1%" filterUnits="objectBoundingBox"
+                        id="9y1gpfaeya">
+                        <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
+                        <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                        <feColorMatrix values="0 0 0 0 0.129411765 0 0 0 0 0.121568627 0 0 0 0 0.121568627 0 0 0 0.24 0"
+                            in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+                        <feMerge>
+                            <feMergeNode in="shadowMatrixOuter1" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <g filter="url(#9y1gpfaeya)" transform="translate(-259 -15)" fill="#E3E1E5" fill-rule="evenodd">
+                    <path
+                        d="M270.254 24.244a.833.833 0 0 1 1.11-.06l.068.06L275 27.812l3.568-3.568a.833.833 0 0 1 1.11-.06l.078.07a.833.833 0 0 1 0 1.178L276.188 29l3.568 3.568a.833.833 0 0 1 .06 1.11l-.07.078a.833.833 0 0 1-1.11.06l-.068-.06L275 30.188l-3.568 3.568a.833.833 0 0 1-1.11.06l-.078-.07a.833.833 0 0 1 0-1.178L273.812 29l-3.568-3.568a.833.833 0 0 1-.06-1.11l.07-.078z" />
+                </g>
+            </svg>
+        </div>
+    </div>
+</div>
